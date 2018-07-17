@@ -18,4 +18,8 @@ function turtleMap(steps) {
   return steps.map(smArr => Math.abs(smArr[0]) + Math.abs(smArr[1]));
 }
 
-console.log(turtleMap(turtleSteps));
+function turtlePrint(map) {
+  map.forEach(num => console.log(num));
+}
+
+console.log(turtlePrint(turtleMap(turtleSteps)));
