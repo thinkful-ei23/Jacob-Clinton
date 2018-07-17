@@ -12,7 +12,10 @@ function turtleFilter(steps) {
   //   }
   // });
 }
-
-
-
 console.log(turtleFilter(turtleSteps));
+
+function turtleMap(steps) {
+  return steps.map(smArr => Math.abs(smArr[0]) + Math.abs(smArr[1]));
+}
+
+console.log(turtleMap(turtleSteps));
